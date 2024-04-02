@@ -4,7 +4,7 @@ authors:
   - name: Kristian Garza
     email: kj.garza@gmail.com
     orcid: https://orcid.org/0000-0003-3484-6875
-    affiliation: https://ror.org/02ktfc112
+    affiliation:
 title: Real-time Emotion Recognition and Image Generation using Wulfenit
 version: 1.0.0
 doi: https://doi.org/
