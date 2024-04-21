@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "wulfenit"
+version = "0.1.0"
+description = "Feedback loop for feelings"
+authors = ["Kristian Garza <kj.garza@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fer = "^22"
+tensorflow = "^1.7"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
