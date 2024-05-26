@@ -9,6 +9,20 @@ RUN apt-get update && apt-get install -y \
     libgl1-mesa-glx \
     python3-opencv
 
+
+RUN mkdir -p /usr/share/man/man1 \
+    && apt-get update \
+    && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+    libgtk2.0-dev\
+    libglib2.0-0\
+    ffmpeg\
+    libsm6\
+    libxext6\
+    git\
+    wget\
+    && rm -rf /var/lib/apt/lists/*
+
+
 # Copy the requirements file to the working directory
 COPY pyproject.toml poetry.lock* ./
 
