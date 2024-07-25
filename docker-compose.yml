@@ -3,9 +3,10 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    platform: linux/amd64
     stdin_open: true # docker run -i
-    volumes:
-      - .:/src
+    # volumes:
+      # - .:/src
     ports:
       - 8000:8000
     command: bash
