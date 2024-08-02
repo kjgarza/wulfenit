@@ -35,7 +35,7 @@ async function displayImages(urls) {
             currentImage = nextImage;
         }
 
-        await new Promise(resolve => setTimeout(resolve, 3000)); // Time between images
+        await new Promise(resolve => setTimeout(resolve, 2000)); // Time between images
     }
 }
 

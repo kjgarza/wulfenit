@@ -3,12 +3,14 @@ const bodyParser = require('body-parser');
 const axios = require('axios');
 const fs = require('fs');
 const path = require('path');
+const cors = require('cors');
 
 const app = express();
 app.use(bodyParser.json());
 app.use(express.static('public'));  // Serve static files from the public directory
 
 let urls = [];
+app.use(cors({ origin: 'http://localhost:3000' }));
 
 app.post('/submit-url', (req, res) => {
     const { url } = req.body;
